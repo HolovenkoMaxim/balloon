@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Balloon - наші екскурсії</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230125143459">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__logo">
+					<a href="home.html"><picture><source srcset="img/icon/logo-white.webp" type="image/webp"><img src="img/icon/logo-white.png" alt="Ballon"></picture></a>
+				</div>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="home.html" class="menu__link">Головна</a></li>
+							<li class="menu__item"><a href="our-tours.html" class="menu__link">Екскурсії</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Особистий кабінет</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="our-tours">
+			<section class="our-tours__headering headering-tours">
+				<div class="headering-tours__wrapper">
+					<div class="headering-tours__bg-ibg">
+						<picture><source srcset="img/calendar/1.webp" type="image/webp"><img src="img/calendar/1.jpg" alt="Гори"></picture>
+					</div>
+					<div class="headering-tours__container">
+						<h2 class="headering-tours__title heading">НАШІ ЕКСКУРСІЇ</h2>
+					</div>
+				</div>
+			</section>
+			<section class="our-tours__main-content main-tours">
+				<div class="main-tours__container">
+					<div class="main-tours__tour-selection selection-tour">
+						<form action="#" class="selection-tour__form">
+							<div class="selection-tour__type type-tour">
+								<label for="tour-bus" class="type-tour__item">
+									<input id="tour-bus" checked type="radio" name="form[]" value="bus">
+									<h5 class="type-tour__name">АВТОБУСНИЙ ТУР</h5>
+								</label>
+								<label for="tour-jeeping" class="type-tour__item">
+									<input id="tour-jeeping" type="radio" name="form[]" value="jeeping">
+									<h5 class="type-tour__name">ДЖИПІНГ</h5>
+								</label>
+								<label for="tour-yachting" class="type-tour__item">
+									<input id="tour-yachting" type="radio" name="form[]" value="YACHTING">
+									<h5 class="type-tour__name">ЯХТИНГ</h5>
+								</label>
+								<label for="tour-canyoning" class="type-tour__item">
+									<input id="tour-canyoning" type="radio" name="form[]" value="CANYONING">
+									<h5 class="type-tour__name">КАНЬОНІНГ</h5>
+								</label>
+							</div>
+							<div class="selection-tour__body form-tour">
+								<div class="form-tour__inputs">
+									<div class="form-tour__input">
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Місто" class="input">
+										<span class="_icon-people"></span>
+									</div>
+									<div class="form-tour__input">
+										<input data-datepicker autocomplete="off" type="text" name="form[]" value="12 листопада 2022">
+										<span class="_icon-calendar"></span>
+									</div>
+
+									<div class="form-tour__input">
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Кількість людей" class="input">
+										<span class="_icon-people"></span>
+									</div>
+									<div class="form-tour__button">
+										<button class="btn">Показати</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="main-tours__body">
+						<aside data-spollers="992" class="main-tours__aside aside-tours">
+							<div data-spoller class="aside-tours__header">
+								<h4>Фільтри</h4>
+								<span></span>
+							</div>
+							<div class="aside-tours__body">
+								<form data-spollers class="aside-tours__filters spollers">
+									<div class="aside-tours__filter spollers__item">
+										<button type="button" data-spoller class="spollers__title _spoller-active">
+											Вартість <span></span>
+										</button>
+										<div class="spollers__body price-filter">
+											<div class="price-filter__value">
+												<input id="price-start" type="number" name="form[]" class="price-filter__input" value="0" min="0" max="20000" step="100">
+												<input id="price-end" type="number" name="form[]" class="price-filter__input" value="20000" max="20000" min="00000" step="100">
+											</div>
+											<div id="range"></div>
+										</div>
+									</div>
+									<div class="aside-tours__filter spollers__item">
+										<button type="button" data-spoller class="spollers__title _spoller-active">
+											Кількість людей <span></span>
+										</button>
+										<div class="spollers__body number-people-filter">
+											<div class="number-people-filter__body">
+												<label class="number-people-filter__items input-radio-oval">
+													<input checked autocomplete="off" type="radio" name="people" value="people-1">
+													<span>1 люд.</span>
+												</label>
+												<label class="number-people-filter__items input-radio-oval">
+													<input autocomplete="off" type="radio" name="people" value="people-2">
+													<span>2 люд.</span>
+												</label>
+												<label class="number-people-filter__items input-radio-oval">
+													<input autocomplete="off" type="radio" name="people" value="people-3">
+													<span>3 люд.</span>
+												</label>
+												<label class="number-people-filter__items input-radio-oval">
+													<input autocomplete="off" type="radio" name="people" value="people-4">
+													<span>4 люд.</span>
+												</label>
+												<label class="number-people-filter__items input-radio-oval">
+													<input autocomplete="off" type="radio" name="people" value="people-5">
+													<span>5 люд.</span>
+												</label>
+												<label class="number-people-filter__items input-radio-oval">
+													<input autocomplete="off" type="radio" name="people" value="people-6">
+													<span>6 люд.</span>
+												</label>
+												<label class="number-people-filter__items input-radio-oval">
+													<input autocomplete="off" type="radio" name="people" value="people-7">
+													<span>7 люд.</span>
+												</label>
+												<label class="number-people-filter__items input-radio-oval">
+													<input autocomplete="off" type="radio" name="people" value="people-8">
+													<span>8 люд.</span>
+												</label>
+												<label class="number-people-filter__items input-radio-oval">
+													<input autocomplete="off" type="radio" name="people" value="people-9">
+													<span>9 люд.</span>
+												</label>
+												<label class="number-people-filter__items input-radio-oval">
+													<input autocomplete="off" type="radio" name="people" value="people-10">
+													<span>10 люд.</span>
+												</label>
+												<label class="number-people-filter__items input-radio-oval">
+													<input autocomplete="off" type="radio" name="people" value="people-10+">
+													<span>Більше 10 люд.</span>
+												</label>
+
+											</div>
+										</div>
+									</div>
+									<div class="aside-tours__filter spollers__item">
+										<button type="button" data-spoller class="spollers__title _spoller-active">
+											Локація <span></span>
+										</button>
+										<div class="spollers__body location-filter">
+											<div class="location-filter__body">
+												<label class="location-filter__items input-radio">
+													<input checked autocomplete="off" type="radio" name="City" value="Kyiv">
+													<span></span>
+													Золоте кільце Гуцульщини
+												</label>
+												<label class="location-filter__items input-radio">
+													<input autocomplete="off" type="radio" name="City" value="Lviv">
+													<span></span>
+													Львів
+												</label>
+												<label class="location-filter__items input-radio">
+													<input autocomplete="off" type="radio" name="City" value="Odesa">
+													<span></span>
+													Одеса
+												</label>
+												<label class="location-filter__items input-radio">
+													<input autocomplete="off" type="radio" name="City" value="Kharkiv">
+													<span></span>
+													Харків
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="aside-tours__filter spollers__item">
+										<button type="button" data-spoller class="spollers__title">
+											Тривалість <span></span>
+										</button>
+										<div class="spollers__body duration-filter">
+											<div class="duration-filter__body">
+												<label class="duration-filter__items input-radio-oval">
+													<input checked autocomplete="off" type="radio" name="duration" value="Duration-1">
+													<span>1 год.</span>
+												</label>
+												<label class="duration-filter__items input-radio-oval">
+													<input autocomplete="off" type="radio" name="duration" value="Duration-2">
+													<span>2 год.</span>
+												</label>
+												<label class="duration-filter__items input-radio-oval">
+													<input autocomplete="off" type="radio" name="duration" value="Duration-3">
+													<span>3 год.</span>
+												</label>
+												<label class="duration-filter__items input-radio-oval">
+													<input autocomplete="off" type="radio" name="duration" value="Duration-4">
+													<span>4 год.</span>
+												</label>
+												<label class="duration-filter__items input-radio-oval">
+													<input autocomplete="off" type="radio" name="duration" value="Duration-5">
+													<span>5 год.</span>
+												</label>
+												<label class="duration-filter__items input-radio-oval">
+													<input autocomplete="off" type="radio" name="duration" value="Duration-6">
+													<span>6 год.</span>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="aside-tours__filter spollers__item">
+										<button type="button" data-spoller class="spollers__title">
+											Дата <span></span>
+										</button>
+										<div class="spollers__body date-filter">
+											<div class="date-filter__body">
+												<input type="hidden" data-datepicker>
+											</div>
+										</div>
+									</div>
+									<div class="aside-tours__buttons">
+										<button class="aside-tours__button btn">Показати</button>
+										<button class="aside-tours__cast"><span></span> Скинути фільтри</button>
+									</div>
+								</form>
+							</div>
+						</aside>
+						<article class="main-tours__content all-tours">
+							<div class="all-tours__header">
+								<h3 class="title">Наші тури</h3>
+							</div>
+							<div class="all-tours__body">
+								<div class="all-tours__content">
+									<article class="all-tours__box tour-card">
+										<div class="tour-card__img-ibg">
+											<picture><source srcset="img/gallery/8.webp" type="image/webp"><img src="img/gallery/8.jpg" alt="8"></picture>
+										</div>
+										<div class="tour-card__body">
+											<div class="tour-card__header">
+												<h6 class="tour-card__subtitle">Автобусний тур</h6>
+												<h4 class="tour-card__title">Золоте кільце Гуцульщини</h4>
+											</div>
+											<div class="tour-card__content">
+												<div class="tour-card__information ">
+													<div class="mini-info-details">
+														<div class="mini-info-details__title">
+															<span class="_icon-money"></span>
+															1 618
+															<span class="_icon-UAH"></span>
+														</div>
+														<div class="mini-info-details__subtitle">
+															Дорослий квиток
+														</div>
+													</div>
+													<div class="mini-info-details">
+														<div class="mini-info-details__title">
+															<span class="_icon-money"></span>
+															1 412
+															<span class="_icon-UAH"></span>
+														</div>
+														<div class="mini-info-details__subtitle">
+															Дитячий квиток
+														</div>
+													</div>
+													<div class="mini-info-details">
+														<div class="mini-info-details__title">
+															<span class="_icon-clock"></span>
+															2,5 часа
+														</div>
+													</div>
+												</div>
+												<div class="tour-card__text">
+													<p>Ворохта оглядово. Кривопільський перевал (висота 1013 метрів над рівнем моря). Криворівня (хата-музей І.Я. Франка, хата-гражда). Яворів (центр ліжникарства).
+														Косів – шопінг виробів гуцульських майстрів. Шешори - сріблясті водоспади (тільки влітку). Коломия – стара Ратуша, музей народного мистецтва Гуцульщини та
+														Покуття, музей Писанки (єдиний в Україні).</p>
+												</div>
+											</div>
+											<div class="tour-card__buttons">
+												<a href="excursion.html" class="tour-card__buttons btn">Детальніше</a>
+												<label class="tour-card__heart heart heart_grey">
+													<input autocomplete="off" type="checkbox" name="form[]" class="">
+													<span class="heart__checkbox _icon-heart"></span>
+													<span class="heart__bg"></span>
+												</label>
+											</div>
+										</div>
+									</article>
+									<article class="all-tours__box tour-card">
+										<div class="tour-card__img-ibg">
+											<picture><source srcset="img/gallery/8.webp" type="image/webp"><img src="img/gallery/8.jpg" alt="8"></picture>
+										</div>
+										<div class="tour-card__body">
+											<div class="tour-card__header">
+												<h6 class="tour-card__subtitle">Автобусний тур</h6>
+												<h4 class="tour-card__title">Золоте кільце Гуцульщини</h4>
+											</div>
+											<div class="tour-card__content">
+												<div class="tour-card__information ">
+													<div class="mini-info-details">
+														<div class="mini-info-details__title">
+															<span class="_icon-money"></span>
+															1 618
+															<span class="_icon-UAH"></span>
+														</div>
+														<div class="mini-info-details__subtitle">
+															Дорослий квиток
+														</div>
+													</div>
+													<div class="mini-info-details">
+														<div class="mini-info-details__title">
+															<span class="_icon-money"></span>
+															1 412
+															<span class="_icon-UAH"></span>
+														</div>
+														<div class="mini-info-details__subtitle">
+															Дитячий квиток
+														</div>
+													</div>
+													<div class="mini-info-details">
+														<div class="mini-info-details__title">
+															<span class="_icon-clock"></span>
+															2,5 часа
+														</div>
+													</div>
+												</div>
+												<div class="tour-card__text">
+													<p>Ворохта оглядово. Кривопільський перевал (висота 1013 метрів над рівнем моря). Криворівня (хата-музей І.Я. Франка, хата-гражда). Яворів (центр ліжникарства).
+														Косів – шопінг виробів гуцульських майстрів. Шешори - сріблясті водоспади (тільки влітку). Коломия – стара Ратуша, музей народного мистецтва Гуцульщини та
+														Покуття, музей Писанки (єдиний в Україні).</p>
+												</div>
+											</div>
+											<div class="tour-card__buttons">
+												<a href="excursion.html" class="tour-card__buttons btn">Детальніше</a>
+												<label class="tour-card__heart heart heart_grey">
+													<input autocomplete="off" type="checkbox" name="form[]" class="">
+													<span class="heart__checkbox _icon-heart"></span>
+													<span class="heart__bg"></span>
+												</label>
+											</div>
+										</div>
+									</article>
+									<article class="all-tours__box tour-card">
+										<div class="tour-card__img-ibg">
+											<picture><source srcset="img/gallery/8.webp" type="image/webp"><img src="img/gallery/8.jpg" alt="8"></picture>
+										</div>
+										<div class="tour-card__body">
+											<div class="tour-card__header">
+												<h6 class="tour-card__subtitle">Автобусний тур</h6>
+												<h4 class="tour-card__title">Золоте кільце Гуцульщини</h4>
+											</div>
+											<div class="tour-card__content">
+												<div class="tour-card__information ">
+													<div class="mini-info-details">
+														<div class="mini-info-details__title">
+															<span class="_icon-money"></span>
+															1 618
+															<span class="_icon-UAH"></span>
+														</div>
+														<div class="mini-info-details__subtitle">
+															Дорослий квиток
+														</div>
+													</div>
+													<div class="mini-info-details">
+														<div class="mini-info-details__title">
+															<span class="_icon-money"></span>
+															1 412
+															<span class="_icon-UAH"></span>
+														</div>
+														<div class="mini-info-details__subtitle">
+															Дитячий квиток
+														</div>
+													</div>
+													<div class="mini-info-details">
+														<div class="mini-info-details__title">
+															<span class="_icon-clock"></span>
+															2,5 часа
+														</div>
+													</div>
+												</div>
+												<div class="tour-card__text">
+													<p>Ворохта оглядово. Кривопільський перевал (висота 1013 метрів над рівнем моря). Криворівня (хата-музей І.Я. Франка, хата-гражда). Яворів (центр ліжникарства).
+														Косів – шопінг виробів гуцульських майстрів. Шешори - сріблясті водоспади (тільки влітку). Коломия – стара Ратуша, музей народного мистецтва Гуцульщини та
+														Покуття, музей Писанки (єдиний в Україні).</p>
+												</div>
+											</div>
+											<div class="tour-card__buttons">
+												<a href="excursion.html" class="tour-card__buttons btn">Детальніше</a>
+												<label class="tour-card__heart heart heart_grey">
+													<input autocomplete="off" type="checkbox" name="form[]" class="">
+													<span class="heart__checkbox _icon-heart"></span>
+													<span class="heart__bg"></span>
+												</label>
+											</div>
+										</div>
+									</article>
+									<article class="all-tours__box tour-card">
+										<div class="tour-card__img-ibg">
+											<picture><source srcset="img/gallery/8.webp" type="image/webp"><img src="img/gallery/8.jpg" alt="8"></picture>
+										</div>
+										<div class="tour-card__body">
+											<div class="tour-card__header">
+												<h6 class="tour-card__subtitle">Автобусний тур</h6>
+												<h4 class="tour-card__title">Золоте кільце Гуцульщини</h4>
+											</div>
+											<div class="tour-card__content">
+												<div class="tour-card__information ">
+													<div class="mini-info-details">
+														<div class="mini-info-details__title">
+															<span class="_icon-money"></span>
+															1 618
+															<span class="_icon-UAH"></span>
+														</div>
+														<div class="mini-info-details__subtitle">
+															Дорослий квиток
+														</div>
+													</div>
+													<div class="mini-info-details">
+														<div class="mini-info-details__title">
+															<span class="_icon-money"></span>
+															1 412
+															<span class="_icon-UAH"></span>
+														</div>
+														<div class="mini-info-details__subtitle">
+															Дитячий квиток
+														</div>
+													</div>
+													<div class="mini-info-details">
+														<div class="mini-info-details__title">
+															<span class="_icon-clock"></span>
+															2,5 часа
+														</div>
+													</div>
+												</div>
+												<div class="tour-card__text">
+													<p>Ворохта оглядово. Кривопільський перевал (висота 1013 метрів над рівнем моря). Криворівня (хата-музей І.Я. Франка, хата-гражда). Яворів (центр ліжникарства).
+														Косів – шопінг виробів гуцульських майстрів. Шешори - сріблясті водоспади (тільки влітку). Коломия – стара Ратуша, музей народного мистецтва Гуцульщини та
+														Покуття, музей Писанки (єдиний в Україні).</p>
+												</div>
+											</div>
+											<div class="tour-card__buttons">
+												<a href="excursion.html" class="tour-card__buttons btn">Детальніше</a>
+												<label class="tour-card__heart heart heart_grey">
+													<input autocomplete="off" type="checkbox" name="form[]" class="">
+													<span class="heart__checkbox _icon-heart"></span>
+													<span class="heart__bg"></span>
+												</label>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="all-tours__pagination">
+									<ul class="pagination">
+										<li><a class="pagination__arrow _icon-smallArrow-L" href="#"></a></li>
+										<li><a href="#" class="pagination_active">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">...</a></li>
+										<li><a href="#">5</a></li>
+										<li><a class="pagination__arrow pagination__arrow_next _icon-smallArrow-L" href="#"></a></li>
+									</ul>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__logo">
+					<picture><source srcset="img/icon/logo-colorful.webp" type="image/webp"><img src="img/icon/logo-colorful.png" alt="Ballon"></picture>
+				</div>
+				<ul class="footer__nav">
+					<li><a href="#">Головна</a></li>
+					<li><a href="#">Екскурсії</a></li>
+					<li><a href="#">Особистий кабінет</a></li>
+				</ul>
+				<ul class="footer__сontacts">
+					<li><a href="https://wa.me/30959199828" class="_icon-whatsapp">+3 095 919 98 28</a></li>
+					<li><a href="tg://resolve?domain=30959199828" class="_icon-tellegram">+3 095 919 98 28</a></li>
+					<li><a href="tg://resolve?domain=BallonTravel" class="_icon-tellegram">Телеграм-бот BallonTravel</a></li>
+					<li><a href="mailto:office@ballontravel.ua" class="_icon-mail">office@ballontravel.ua</a></li>
+				</ul>
+				<ul class="footer__social-networks networks-footer">
+					<li><a href="#" class="networks-footer__twiter _icon-twiter"></a></li>
+					<li><a href="#" class="networks-footer__instagram _icon-instagram"></a></li>
+					<li><a href="#" class="networks-footer__facebook _icon-facebook"></a></li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20230125143459"></script>
+</body>
+
+</html>
